@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Enter number of elements: ";
+    cin >> n;
+
+    int arr[n];
+    cout << "Enter elements in ascending order:\n";
+    for (int i = 0; i < n; i++)
+        cin >> arr[i];
+
+    // Since array is sorted, the last element is the largest
+    cout << "Largest element in the sorted array is: " << arr[n - 1] << endl;
+
+    return 0;
+}
